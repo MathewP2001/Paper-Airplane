@@ -1,41 +1,37 @@
 ﻿CSCI 1550 HW 1 Pr. 2
 Mathew Pagan
 
-subroutine definitions:
+paperFolds definitions:
 
-  subroutine_1(input side):
+  cornerFold(input side):
     Take the top corner of the input side and fold it into the center crease to form a 90 degree triangle
 
-  subroutine_2(input side):
+  edgeFold(input side):
     Take the edge of the inputside you just made at the corners and also fold and align into the center crease
 
-  subroutine_3(input side):
+  wingFold(input side):
     On the input side of the folded paper, take the top edge and fold it down to align with bottom edge and crease
 
-main procedure:
-  step 1: 
-    Place standard 8.5x11 piece of paper with long side facing you on table
+main procedure: 
+//variables
+right_side
+left_side
+tab1
 
-  step 2:
+    Place standard 8.5x11 piece of paper with long side facing you on tabl
+
     Fold paper in “hot dog style”(join the two longer edges, then crease the fold) and reopen the paper
 
-  step 3: 
-    subroutine_1(left side)
+    cornerFold(left side)
 
-  step 4:
-    subroutine_1(right side)
+    cornerFold(right side)
 
-  step 5:
-    subroutine_2(left side)
+    edgeFold(left side)
 
-  step 6:
-    subroutine_2(right side)
+    edgeFold(right side)
 
-  step 7:
     Now fold the entire paper along the first crease made in step 2
 
-  step 8:
-    subroutine_3(left side)
+    wingFold(left side)
 
-  step 9:
-    subroutine_3(right side)
+    wingFold(right side)
