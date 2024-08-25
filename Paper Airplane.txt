@@ -1,29 +1,41 @@
 ﻿CSCI 1550 HW 1 Pr. 2
 Mathew Pagan
 
+subroutine definitions:
 
-Place standard 8.5x11 piece of paper with long side facing you on table
+  subroutine_1(input side):
+    Take the top corner of the input side and fold it into the center crease to form a 90 degree triangle
 
+  subroutine_2(input side):
+    Take the edge of the inputside you just made at the corners and also fold and align into the center crease
 
-Fold paper in “hot dog style”(join the two longer edges, then crease the fold) and reopen the paper
+  subroutine_3(input side):
+    On the input side of the folded paper, take the top edge and fold it down to align with bottom edge and crease
 
+main procedure:
+  step 1: 
+    Place standard 8.5x11 piece of paper with long side facing you on table
 
-Take one of the top corners and fold it into the center crease to form a 90 degree triangle
+  step 2:
+    Fold paper in “hot dog style”(join the two longer edges, then crease the fold) and reopen the paper
 
+  step 3: 
+    subroutine_1(left side)
 
-Do the same with the other top corner which should form a tip at the top of your paper
+  step 4:
+    subroutine_1(right side)
 
+  step 5:
+    subroutine_2(left side)
 
-Take either one of the edges you just made at the corners and also fold and align into the center crease
+  step 6:
+    subroutine_2(right side)
 
+  step 7:
+    Now fold the entire paper along the first crease made in step 2
 
-Do the same with the corner edge which form a pointier triangle at the top of your paper
+  step 8:
+    subroutine_3(left side)
 
-
-Now fold the entire paper along the first crease made in step 2
-
-
-On both either side of the folded paper, take the top edge and fold it down to align with bottom edge and crease
-
-
-Repeat for the opposite side
+  step 9:
+    subroutine_3(right side)
