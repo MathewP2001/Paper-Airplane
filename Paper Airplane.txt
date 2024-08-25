@@ -1,12 +1,22 @@
 ﻿CSCI 1550 HW 1 Pr. 2
 Mathew Pagan
 
+//Materials
+8.5x11 paper
+
 paperFolds definitions:
 
-  cornerFold(input side):
+  verticalFold(paper,crease)
+     Now fold the entire paper along the first crease made in verticalCrease
+
+  verticalCrease(paper)
+     Fold paper in “hot dog style”(join the two longer edges, then crease the fold) and reopen the paper\
+    create variable crease1
+
+  cornerFold(input side,crease):
     Take the top corner of the input side and fold it into the center crease to form a 90 degree triangle
 
-  edgeFold(input side):
+  edgeFold(input side,crease):
     Take the edge of the inputside you just made at the corners and also fold and align into the center crease
 
   wingFold(input side):
@@ -16,21 +26,21 @@ main procedure:
 //variables
 right_side
 left_side
-tab1
+paper1
 
     Place standard 8.5x11 piece of paper with long side facing you on tabl
+    
+    verticalCrease(paper1)
 
-    Fold paper in “hot dog style”(join the two longer edges, then crease the fold) and reopen the paper
+    cornerFold(left side,crease1)
 
-    cornerFold(left side)
+    cornerFold(right side,crease1)
 
-    cornerFold(right side)
+    edgeFold(left side,crease1)
 
-    edgeFold(left side)
+    edgeFold(right side,crease1)
 
-    edgeFold(right side)
-
-    Now fold the entire paper along the first crease made in step 2
+    verticalFold(paper1,crease1)
 
     wingFold(left side)
 
